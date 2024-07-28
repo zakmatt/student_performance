@@ -1,0 +1,4 @@
+[core]
+    remote = student_performance_s3
+['remote "student_performance_s3"']
+    url = s3://student-performance-data
