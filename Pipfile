@@ -9,6 +9,15 @@ numpy = "*"
 matplotlib = "*"
 seaborn = "*"
 jupyter = "*"
+mlflow = "*"
+boto3 = "*"
+psycopg2 = "*"
+torch = "*"
+torchvision = "*"
+torchaudio = "*"
+xgboost = "*"
+hyperopt = "*"
+mage-ai = "*"
 
 [dev-packages]
 
