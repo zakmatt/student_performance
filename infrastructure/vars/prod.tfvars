@@ -8,9 +8,6 @@ rds_instance_class    = "db.t3.micro"
 rds_db_name           = "proddb"
 rds_username          = "prodadmin"
 rds_password          = "prodpassword123"
-rds_vpc_security_group_ids = ""
-rds_db_subnet_group_name   = ""
-blue_green_update_enabled = true
 
 tags = {
   Environment = "prod"

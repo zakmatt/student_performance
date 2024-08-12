@@ -4,11 +4,15 @@ variable "aws_region" {
   default     = "eu-west-1"
 }
 
+# ============ S3 ============
+
 variable "s3_bucket_name" {
   description = "The name of the S3 bucket"
   type        = string
   default     = "my-model-storage-bucket"
 }
+
+# ============ RDS ============
 
 variable "rds_allocated_storage" {
   description = "The allocated storage in gigabytes"
@@ -46,25 +50,16 @@ variable "rds_password" {
   default     = "admin123"
 }
 
-variable "rds_vpc_security_group_ids" {
-  description = "The VPC security group IDs"
+# ============ IP Address ============
+
+variable "my_public_ip" {
+  description = "Public IP address of the user"
   type        = string
-  default     = ""
 }
 
-variable "rds_db_subnet_group_name" {
-  description = "The subnet group name for the database"
-  type        = string
-  default     = ""
-}
+# ============ General ============
 
 variable "tags" {
   description = "A map of tags to assign to the resources"
   type        = map(string)
-}
-
-variable "blue_green_update_enabled" {
-  description = "Enable low-downtime updates with blue/green deployment"
-  type        = bool
-  default     = false
 }
